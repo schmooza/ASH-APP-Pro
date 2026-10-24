@@ -27,7 +27,7 @@ colors = ["blue","pink"]
 
 my_blinds = []
 
-for i in range(33):
+for i in range(10):
     y = 8 - i * 0.5
 
     my_blinds += [
@@ -36,7 +36,21 @@ for i in range(33):
         ("up", -8, y),
         ("heading", 0),
         ("down",),
-        ("forward", 16),
+        ("forward", 5),
+    ]
+
+my_blinds2 = []
+
+for i in range(10):
+    y = 8 - i * 0.5
+
+    my_blinds += [
+        ("speed", 0),
+        ("color", "yellow"),
+        ("up", -7, y),
+        ("heading", 0),
+        ("down",),
+        ("forward", 5),
     ]
 
 
@@ -48,6 +62,7 @@ image_sequence = [
   
 
  ("Blue Line", my_blinds),
+  ("Blue Line", my_blinds2),
 ]
 
 
